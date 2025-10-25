@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
-import type { DestinationSummary } from './types';
-import { fetchSummaries } from './services/geminiService';
+import type { DestinationSummary } from './types.ts';
+import { fetchSummaries } from './services/geminiService.ts';
 
 const MapPinIcon: React.FC<{ className?: string }> = ({ className }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
@@ -101,7 +101,7 @@ const MapDisplay: React.FC<MapDisplayProps> = ({ url, onBack }) => (
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-        <button onClick={onBack} className="absolute top-4 right-4 flex items-center gap-2 bg-white/60 backdrop-blur-lg text-slate-700 font-semibold px-4 py-2 rounded-xl shadow-lg ring-1 ring-black/5 hover:bg-white/80 transition-all duration-300">
+        <button onClick={onBack} className="absolute top-4 right-4 flex items-center gap-2 bg-yellow-400/80 backdrop-blur-lg text-yellow-900 font-semibold px-4 py-2 rounded-xl shadow-lg ring-1 ring-black/5 hover:bg-yellow-400/90 transition-all duration-300">
             <ArrowUturnLeftIcon className="h-5 w-5" />
             入力に戻る
         </button>
