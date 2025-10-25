@@ -1,0 +1,5 @@
+{
+  "name": "観光AIプランナー",
+  "description": "3つの観光地を入力すると、AIがそれぞれの見どころを要約し、Googleマップでルートを表示するウェブアプリケーションです。",
+  "requestFramePermissions": []
+}
